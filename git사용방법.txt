@@ -1,0 +1,56 @@
+git 사용방법
+
+- 커밋할 폴더 오른쪽 버튼 눌러스 git-bash 선택하면 콘솔창 뜬다
+
+- git init
+
+- git status
+
+- git remote add origin https://github.com/guriguri113/opensesame.git(커밋할 저장소 원격지)
+
+- git status(아직 커밋되지 않은 파일이 빨간색으로 표시)
+
+- git add. 폴더내 모든 파일 추가 
+
+- git config --global user.email "guriguri1576@naver.com" (처음 커밋이므로 이메일 주소 입력)
+
+- git config --global user.name "bingbingpa" (ID 입력)
+
+- git commit -m 'tetete' (커밋에 대한 주석)
+
+- git push -u origin master(커밋!)
+
+
+<위와 같이 한번 설정하고 난 후 커밋할 때 > 
+
+- 파일 수정 후 
+
+- git add . 
+
+- git commit -m '주석내용'
+
+- git push
+
+
+<브런치(복사본) 만들기 > 
+
+- git checkout -b beta(브런치명)
+
+- git branch(현재 branch확인)
+
+<새로운 브런치에 파일 저장> 
+
+- 파일 작성 후 
+
+- git add . 
+
+- git commit -m '주석내용'
+
+- git push -u origin beta(브런치명)
+
+<beta브런치를 마스터로 merge>
+
+- git merge beta(merge할 branch명)
+
+- git push
+
